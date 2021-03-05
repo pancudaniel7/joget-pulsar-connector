@@ -1,0 +1,40 @@
+[{
+    title : '@@app.pulsar.config@@',
+    properties : [{
+        name : 'brokerUrl',
+        label : '@@app.pulsar.brokerUrl@@',
+        type : 'textarea',
+        description : '@@app.pulsar.brokerUrl.description@@',
+        required : 'False'
+    },
+    {
+        name : 'apiKey',
+        label : '@@app.pulsar.apiKey@@',
+        type : 'textfield',
+        required : 'False'
+    },
+    {
+        name : 'topic',
+        label : '@@app.pulsar.topic@@',
+        type : 'textfield',
+        required : 'False'
+    },
+    {
+        name : 'script',
+        label : '@@app.pulsar.consumer.script@@',
+        description : '@@app.pulsar.consumer.script.desc@@',
+        type : 'codeeditor',
+        required : 'False',
+        mode : 'java'
+    },
+    {
+        name : 'debugMode',
+        label : '@@app.pulsar.debugMode@@',
+        description : '@@app.pulsar.debugMode.desc@@',
+        type : 'checkbox',
+        options : [{
+            value : 'True',
+            label : ''
+        }]
+    }]
+}]
